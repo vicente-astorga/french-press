@@ -1,0 +1,27 @@
+
+
+.navbar{
+    position: fixed;
+    width: 100vw;
+    padding: var(--step-3);
+    z-index: 1;
+}
+
+.navbar__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__box > img{
+    width: var(--step-2);
+    cursor: pointer;
+}
+.navbar__box__menu{
+    width: var(--step-1);
+    height: var(--step-1);
+    border-radius: 50%;
+    border: medium solid white;
+    cursor: pointer;
+}

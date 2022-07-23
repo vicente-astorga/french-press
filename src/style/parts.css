@@ -1,0 +1,157 @@
+.parts {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: whitesmoke; */
+  position: relative;
+}
+
+.parts__info{
+  z-index: 1;
+  display: none;
+  position: absolute;
+  padding: var(--step-0);
+  border-radius: 1rem;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 120px;
+  max-height: 200px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.parts__info__close{
+  font-size: var(--step-0);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transform: translateX(-100%) translateY(50%);
+  cursor: pointer;
+}
+.parts__info__title{
+  align-self: flex-start;
+  font-size: var(--step-0);
+  font-weight: 500;
+}
+.parts__info__text{
+  font-size: var(--step--2);
+  
+}
+
+.parts__box {
+  width: inherit;
+  height: inherit;
+  /* border: thin solid red; */
+  position: relative;
+}
+
+.parts__box__item{
+  opacity: 0;
+  position: fixed;
+  width: var(--step-3);
+  height: var(--step-3);
+  border-radius: 50%;
+  background-color: white;
+  font-size: var(--step-2);
+  color: #CECECE;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parts__box__item > span{
+  padding-bottom: calc(var(--step-3) * .1);
+  cursor: pointer;
+
+}
+
+
+.click1 {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-70%) translateY(-630%);
+}
+.click1::after {
+  content: "Cover";
+  position: absolute;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(var(--step-3) * .4);
+  height: calc(var(--step-3) * .75);
+  left: calc(var(--step-3) * 1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.click2 {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-10%) translateY(-450%);
+}
+.click2::after {
+  content: "Filter";
+  position: absolute;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(var(--step-3) * .4);
+  height: calc(var(--step-3) * .75);
+  left: calc(var(--step-3) * 1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.click3 {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-230%) translateY(270%);
+}
+.click3::after {
+  content: "Glass";
+  position: absolute;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(var(--step-3) * .4);
+  height: calc(var(--step-3) * .75);
+  right: calc(var(--step-3) * 1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.click4 {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-80%) translateY(650%);
+}
+.click4::after {
+  content: "Support";
+  position: absolute;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(var(--step-3) * .4);
+  height: calc(var(--step-3) * .75);
+  right: calc(var(--step-3) * 1.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

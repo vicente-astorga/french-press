@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/index.css" />
+    <link rel="icon" href="src/assets/french-press.png">
+    <title>French Press</title>
+  </head>
+  <body>
+    <div class="loader show">
+      <div class="loader__progress">
+        <img class="loader__progress__bar" src="src/assets/triangle.svg" alt="grid loader">
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <div class="navbar__box">
+        <img src="src/assets/icon.png" alt="bean logo" />
+        <div class="navbar__box__menu"></div>
+      </div>
+    </nav>
+
+    <section class="block1 main">
+      <div class="blur-circle"></div>
+
+      <div class="scroll-down-cricle">
+        <svg class="svg1" viewBox="0 0 100 100" width="100" height="100">
+          <defs>
+            <path
+              id="circle"
+              d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0"
+            />
+          </defs>
+          <text font-size="15.6">
+            <textPath xlink:href="#circle" fill="#fff">
+              SCROLL DOWN SCROLL DOWN
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="title__box">
+        <div class="title__box__content">
+          <span>FRENCH</span>
+          <div>
+            <h3>PRESS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="container"></div>
+
+    <section class="block2 parts"> 
+
+      <div class="parts__info">
+        <div class="parts__info__close">&#10005;</div>
+        <div class="parts__info__title"></div>
+        <div class="parts__info__text"></div>
+      </div>
+      <div class="parts__box">
+        <div class="parts__box__item click1" ><span>&#xFE62;</span></div>
+        <div class="parts__box__item click2" ><span>&#xFE62;</span></div>
+        <div class="parts__box__item click3" ><span>&#xFE62;</span></div>
+        <div class="parts__box__item click4" ><span>&#xFE62;</span></div>
+      </div>
+    </section>
+
+    <section class="block3 colors">
+      <div class="colors__title">
+        <span>FIND YOUR COLOR</span>
+      </div>
+
+      <div class="colors__picker">
+        <div class="colors__picker__option">plastic</div>
+        <div class="colors__picker__option">metallic</div>
+        <div class="colors__picker__option">resine</div>
+      </div>
+    </section>
+
+    <script type="module" src="src/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </body>
+</html>
