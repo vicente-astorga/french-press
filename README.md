@@ -2,7 +2,7 @@
 
 This project was inspired by my love for coffee. Showing a french press that unfolds on scroll. At the end, different materials are shown to select from.
 
-This website was developed with vanilla JS, GSAP for animations, and Three.js for WebGL.
+This website was developed in vanilla JS with Parcel as a bundler, GSAP for animations, and Three.js for WebGL.
 
 Take a look here: https://vicente-astorga.github.io/french-press/
 
